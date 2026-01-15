@@ -1,0 +1,20 @@
+{
+  mkShell,
+  cmake,
+  gum,
+  neocmakelsp,
+  ninja,
+  config,
+}:
+mkShell {
+  name = "advent-of-code-2015";
+  inputsFrom = [
+    config.treefmt.build.devShell
+  ];
+  packages = [
+    cmake
+    gum
+    neocmakelsp
+    ninja
+  ];
+}
