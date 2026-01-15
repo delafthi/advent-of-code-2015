@@ -24,8 +24,7 @@ clang-tidy: configure
 # Lint files with cppcheck
 cpp-check: configure
     #!/usr/bin/env bash
-    fd '.+\.(c|h)$' \
-      | xargs -r -P$(nproc) cppcheck \
+    cppcheck \
         --check-level=exhaustive \
         --error-exitcode=1 \
         -i{{ BUILD_DIR }} \

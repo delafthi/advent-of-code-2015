@@ -9,3 +9,5 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 include_directories(include)
 
 add_compile_options(-Wall -Wextra -Wpedantic -Werror)
+
+add_subdirectory(src)
