@@ -36,13 +36,14 @@ int main(int argc, char **argv) {
         }
         }
 
+        // Part 2
         if (first_time_in_basement == 0 && floor == -1) {
             first_time_in_basement = instr_it + 1;
         }
     }
 
-    (void)printf("Part one: %d\n", floor);
-    (void)printf("Part two: %d\n", first_time_in_basement);
+    (void)printf("Part 1: %d\n", floor);
+    (void)printf("Part 2: %d\n", first_time_in_basement);
 
     return EXIT_SUCCESS;
 }
