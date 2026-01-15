@@ -1,0 +1,16 @@
+InheritParentConfig: false
+# Disabled checks rationale:
+# - clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling: Annex K isn't available on MacOS systems
+Checks: >-
+    bugprone-*,
+    cert-*,
+    google-*,
+    llvm-*,
+    misc-*,
+    modernize-*,
+    performance-*,
+    portability-*,
+    readability-*,
+    -clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling,
+FormatStyle: file
+WarningsAsErrors: "*"
