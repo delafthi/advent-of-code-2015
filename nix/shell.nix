@@ -4,6 +4,8 @@
   gum,
   neocmakelsp,
   ninja,
+  openssl,
+  pkg-config,
   config,
 }:
 mkShell {
@@ -16,5 +18,7 @@ mkShell {
     gum
     neocmakelsp
     ninja
+    openssl
+    pkg-config
   ];
 }
