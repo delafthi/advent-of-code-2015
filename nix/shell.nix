@@ -3,6 +3,7 @@
   cmake,
   cppcheck,
   gum,
+  just,
   neocmakelsp,
   ninja,
   openssl,
@@ -18,6 +19,7 @@ mkShell {
     cmake
     cppcheck
     gum
+    just
     neocmakelsp
     ninja
     openssl
